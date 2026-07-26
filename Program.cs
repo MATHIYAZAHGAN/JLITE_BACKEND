@@ -24,7 +24,11 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAngularApp", policy =>
     {
-        policy.WithOrigins("http://localhost:4200") // Angular dev server
+policy.WithOrigins(
+    "http://localhost:4200",
+    "https://your-firebase-project.web.app",
+    "https://your-firebase-project.firebaseapp.com"
+)
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
