@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JLITE.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2c8b91401c31c04c8b70a8e5fd9d1bed37ab822")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70113554c5c01ec15c322d52a9b518b4ba778ceb")]
 [assembly: System.Reflection.AssemblyProductAttribute("JLITE.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JLITE.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
