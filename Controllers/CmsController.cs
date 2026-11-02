@@ -31,7 +31,7 @@ namespace JLITE.API.Controllers
                     Title = "High-Voltage Power & Smart Electrical Solutions",
                     HighlightText = "Tamil Nadu's Trusted Govt. A-Grade License Up to 33kV",
                     Subtitle = "Manufacturer & Direct Supplier of ISI/CE Certified Switchgear, MCBs, RCCBs, DB Boxes, Smart Touch Switches & Armoured Cables.",
-                    BadgeText = "ISI & CE Certified • 5-Year Warranty • 24h Express Dispatch",
+                    BadgeText = "ISI & CE Certified ï¿½ 5-Year Warranty ï¿½ 24h Express Dispatch",
                     TrustStats = new System.Collections.Generic.List<TrustStat>
                     {
                         new TrustStat { Value = "50,000+", Label = "Contractors & B2B Buyers" },
@@ -57,6 +57,25 @@ namespace JLITE.API.Controllers
         {
             var clients = await _context.Clients.Find(_ => true).ToListAsync();
             return Ok(clients);
+        }
+
+        
+        [HttpGet("about")]
+        public async Task<IActionResult> GetAbout()
+        {
+            try
+            {
+                var about = await _context.AboutContents.Find(_ => true).FirstOrDefaultAsync();
+                if (about == null)
+                {
+                    about = new AboutData();
+                }
+                return Ok(about);
+            }
+            catch (Exception)
+            {
+                return Ok(new AboutData());
+            }
         }
 
         [HttpPost("contact")]

@@ -29,5 +29,6 @@ namespace JLITE.API.Services
         public IMongoCollection<ServiceRequest> ServiceRequests => _database.GetCollection<ServiceRequest>("ServiceRequests");
         public IMongoCollection<QuoteRequest> QuoteRequests => _database.GetCollection<QuoteRequest>("QuoteRequests");
         public IMongoCollection<PolicyContent> Policies => _database.GetCollection<PolicyContent>("Policies");
+        public IMongoCollection<AboutData> AboutContents => _database.GetCollection<AboutData>("AboutContents");
     }
 }

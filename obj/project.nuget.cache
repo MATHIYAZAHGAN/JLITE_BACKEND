@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iQEPAinNDGQ=",
+  "dgSpecHash": "i644Rc6c8is=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mathi\\OneDrive\\Desktop\\jlite_web\\jlite_backend\\JLITE_BACKEND\\JLITE.API.csproj",
+  "projectFilePath": "C:\\Users\\Mathi\\Desktop\\jlite_web\\jlite_backend\\JLITE_BACKEND\\JLITE.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mathi\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Mathi\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

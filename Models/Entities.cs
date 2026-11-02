@@ -249,4 +249,47 @@ namespace JLITE.API.Models
         public string ContentMarkdown { get; set; } = string.Empty;
         public DateTime LastUpdated { get; set; } = DateTime.UtcNow;
     }
+
+    public class AboutData
+    {
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string? Id { get; set; }
+        public string Slug { get; set; } = "main-about";
+        public string Heading { get; set; } = "About JLITE Engineers";
+        public string Subheading { get; set; } = "Excellence in Electrical Engineering";
+        public string Content { get; set; } = "JLITE Engineers is a leading provider of electrical contracting and lighting solutions. With years of experience and a commitment to quality, we deliver innovative solutions for all your electrical needs.";
+        public List<string> Images { get; set; } = new() { "assets/Picture1.jpg", "assets/Picture2.jpg" };
+        public List<AboutStat> Stats { get; set; } = new()
+        {
+            new AboutStat { Label = "Years Experience", Value = "12+" },
+            new AboutStat { Label = "Max Voltage Rating", Value = "33kV" },
+            new AboutStat { Label = "Projects Delivered", Value = "500+" },
+            new AboutStat { Label = "Client Retention", Value = "99.4%" }
+        };
+        public List<AboutFeature> Features { get; set; } = new()
+        {
+            new AboutFeature { Title = "Govt. Grade 'A' Licensed", Description = "Authorised by Tamil Nadu Electrical Licensing Board for HV/MV/LV works up to 33kV." },
+            new AboutFeature { Title = "CEIG Approvals & Statutory Liaison", Description = "Seamless statutory clearances with the Chief Electrical Inspector to Government." },
+            new AboutFeature { Title = "Turnkey EPC Capabilities", Description = "Design, procurement, erection, testing, and commissioning under single-point responsibility." }
+        };
+        public bool IsActive { get; set; } = true;
+        public int Order { get; set; } = 1;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public DateTime UpdatedAt { get; set; } = DateTime.UtcNow;
+    }
+
+    public class AboutStat
+    {
+        public string Label { get; set; } = string.Empty;
+        public string Value { get; set; } = string.Empty;
+        public string Icon { get; set; } = string.Empty;
+    }
+
+    public class AboutFeature
+    {
+        public string Title { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public string Icon { get; set; } = string.Empty;
+    }
 }
