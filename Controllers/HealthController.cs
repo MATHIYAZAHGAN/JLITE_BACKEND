@@ -13,7 +13,7 @@ namespace JLITE.API.Controllers
             return Ok(new
             {
                 status = "Healthy",
-                service = "JLite Engineers API Engine",
+                service = "JLite API Engine",
                 timestamp = DateTime.UtcNow,
                 renderKeepAlive = true
             });

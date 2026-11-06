@@ -256,9 +256,9 @@ namespace JLITE.API.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
         public string Slug { get; set; } = "main-about";
-        public string Heading { get; set; } = "About JLITE Engineers";
+        public string Heading { get; set; } = "About JLITE";
         public string Subheading { get; set; } = "Excellence in Electrical Engineering";
-        public string Content { get; set; } = "JLITE Engineers is a leading provider of electrical contracting and lighting solutions. With years of experience and a commitment to quality, we deliver innovative solutions for all your electrical needs.";
+        public string Content { get; set; } = "JLITE is a leading provider of electrical contracting and lighting solutions. With years of experience and a commitment to quality, we deliver innovative solutions for all your electrical needs.";
         public List<string> Images { get; set; } = new() { "assets/Picture1.jpg", "assets/Picture2.jpg" };
         public List<AboutStat> Stats { get; set; } = new()
         {
